@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!---ITP3 - Bryce Ratliff -->
+<html>
+  <head>
+  </head>
+  <body>
+    <form name='calculator'>
+      <table>
+        <tr>
+          <td colspan='4'>
+            <input type='text' name='calc' id='calc' disabled>
+          </td>
+        </tr>
+      <!-- Create table - username requires only even has functionality -->
+        <tr>
+          <td><input type='button' name='one' value='' onclick="calculator.calc.value +=''"></td>
+          <td><input type='button' name='two' value='2' onclick="calculator.calc.value +='2'"></td>
+          <td><input type='button' name='three' value='' onclick="calculator.calc.value +=''"></td>
+          <td><input type="button" class='operator' name='add' value="+" onclick="calculator.calc.value += '+'"></td>
+        </tr>
+        <tr>
+          <td><input type='button' name='four' value='4' onclick="calculator.calc.value +='4'"></td>
+          <td><input type='button' name='five' value='' onclick="calculator.calc.value +=''"></td>
+          <td><input type='button' name='six' value='6' onclick="calculator.calc.value +='6'"></td>
+          <td><input type="button" class='operator' name='subtract' value="-" onclick="calculator.calc.value += '-'"></td>
+        </tr>
+        <tr>
+          <td><input type='button' name='seven' value='' onclick="calculator.calc.value +=''"></td>
+          <td><input type='button' name='eight' value='8' onclick="calculator.calc.value +='8'"></td>
+          <td><input type='button' name='nine' value='' onclick="calculator.calc.value +=''"></td>
+          <td><input type="button" class='operator' name='multiply' value="*" onclick="calculator.calc.value += '*'"></td>
+        </tr>
+        <tr>
+          <td><input type="button" id="clear" name="clear" value="C" onclick="calculator.calc.value = ''"></td>
+          <td><input type='button' name='zero' value='0' onclick="calculator.calc.value +='0'"></td>
+          <td><input type="button" name="equals" value="=" onclick="calculator.calc.value = eval(calculator.display.value)"></td>
+          <td><input type="button" class='operator' name='divide' value="/" onclick="calculator.calc.value += '/'"></td>
+        </tr>
+      </table>
+    </form>
+  <br>
+  <br>
+
+  <p> Username: bryratli </p>
+  </body>
+</html>
